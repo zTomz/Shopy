@@ -55,9 +55,25 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Shopy',
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
+          theme: ThemeData(
+            useMaterial3: true,
+            colorScheme: lightColorScheme,
+            textTheme: const TextTheme(
+              bodyText1: TextStyle(
+                color: Colors.black,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
           darkTheme:
-              ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
+              ThemeData(useMaterial3: true, colorScheme: darkColorScheme,textTheme: const TextTheme(
+              bodyText1: TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),),
           home: const Home(),
         );
       },

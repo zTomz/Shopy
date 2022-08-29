@@ -119,11 +119,7 @@ class _HomePageState extends State<HomePage> {
                               children: [
                                 Text(
                                   _shoppingList.getAt(index)!.text,
-                                  style: const TextStyle(
-                                    color: Color(0xFF2b2d42),
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 20,
-                                  ),
+                                  style: Theme.of(context).textTheme.bodyText1,
                                 ),
                                 Container(
                                   margin: const EdgeInsets.all(10),

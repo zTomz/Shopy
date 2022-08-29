@@ -45,3 +45,14 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Firebase related
+lib/firebase_options.dart
+
+# Google Api Key
+/ios/
+/macos/
+/windows/
+/linux/
+/web/
+/android/
